@@ -1,0 +1,194 @@
+/* LS Theme Editor - Professional UI Styles */
+
+/* --- Main Wrapper & Header --- */
+.ls-theme-editor-wrap .wp-heading-inline {
+    margin-bottom: 10px;
+}
+
+/* --- Tabs --- */
+.ls-theme-editor-wrap .nav-tab-wrapper {
+    border-bottom: 1px solid #c3c4c7;
+    padding-left: 10px;
+    padding-top: 10px;
+    background: #fff;
+    border-radius: 4px 4px 0 0;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+.ls-theme-editor-wrap .nav-tab {
+    border: 1px solid transparent;
+    border-bottom: none;
+}
+
+/* --- Content Card --- */
+.ls-card {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-top: none;
+    padding: 25px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.ls-card h2 {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 8px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+.ls-card > p {
+    font-size: 14px;
+    color: #50575e;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.ls-card .form-table {
+    margin-top: 0;
+}
+.ls-card .form-table th {
+    padding-left: 0;
+}
+
+/* --- LESS Editor Section --- */
+.less-editor-container {
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fafafa;
+}
+.less-editor-container:last-child {
+    margin-bottom: 0;
+}
+.less-editor-container h4 {
+    margin: 0;
+    padding: 12px 15px;
+    font-size: 14px;
+    background: #f0f0f1;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #2c3338;
+}
+.less-editor-container h4 .dashicons {
+    font-size: 18px;
+}
+.less-editor {
+    width: 100%;
+    font-family: monospace;
+    background-color: #fff;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+    line-height: 1.6;
+}
+.less-editor-actions {
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f6f7f7;
+}
+.less-editor-actions .spinner {
+    visibility: hidden;
+    float: none;
+    margin: 0;
+}
+.less-editor-actions .spinner.is-active {
+    visibility: visible;
+}
+.less-editor-actions .save-status {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 3px;
+    display: none; /* Hidden by default */
+}
+.less-editor-actions .save-status.success {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    display: inline-block;
+}
+.less-editor-actions .save-status.error {
+    background-color: #f8d7da;
+    color: #842029;
+    display: inline-block;
+}
+
+/* --- Screenshots Tab --- */
+.ls-screenshot-preview {
+    max-width: 300px;
+    height: auto;
+    border: 1px solid #ddd;
+    padding: 5px;
+    background: #fff;
+    border-radius: 3px;
+    display: block;
+    margin-bottom: 10px;
+}
+.ls-card input[type="file"] {
+    border: 1px solid #8c8f94;
+    padding: 5px 8px;
+    border-radius: 3px;
+}
+
+/* --- Confirmation Modal --- */
+.ls-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ls-modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.3);
+    animation: ls-modal-fadein 0.3s;
+}
+@keyframes ls-modal-fadein {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.ls-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+.ls-modal-header h3 {
+    margin: 0;
+    font-size: 18px;
+}
+.ls-modal-close {
+    border: none;
+    background: transparent;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+    color: #666;
+}
+.ls-modal-body p {
+    margin: 0;
+    font-size: 14px;
+}
+.ls-modal-footer {
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+    margin-top: 20px;
+    text-align: right;
+}
+.ls-modal-footer .button {
+    margin-left: 10px;
+}
