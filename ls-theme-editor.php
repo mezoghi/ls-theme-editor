@@ -1,13 +1,11 @@
 <?php
 /**
  * Plugin Name:       LS - Theme Editor
- * Plugin URI:        https://#
+ * Plugin URI:        https://libyanspider.com
  * Description:       Enhances the developer experience for YOOtheme child themes by allowing direct edits from the WordPress admin.
  * Version:           1.3.0
- * Author:            Lazar Spasov
- * Author URI:        https://#
- * License:           GPL-2.0+
- * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
+ * Author:            Mohammed Almozoghi 
+ * Author URI:        https://libyanspider.com
  * Text Domain:       ls-theme-editor
  * Domain Path:       /languages
  */
